@@ -1,3 +1,4 @@
+
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -14,15 +15,21 @@ import Testimonials from './sections/Testimonials';
 import FinalCTA from './sections/FinalCTA';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
-
+import Connect from "./Connect";
 import './App.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
 function App() {
+  const path = window.location.pathname;
+
+if (path === "/connect") {
+  return <Connect />;
+}
   useEffect(() => {
     // Wait for all ScrollTriggers to be created
     const timer = setTimeout(() => {
+      
       const pinned = ScrollTrigger.getAll()
         .filter((st) => st.vars.pin)
         .sort((a, b) => a.start - b.start);
