@@ -1,0 +1,103 @@
+/* App-specific styles */
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid rgba(168, 85, 247, 0.5);
+  outline-offset: 2px;
+}
+
+/* Button active states */
+button:active {
+  transform: scale(0.98);
+}
+
+/* Link hover transitions */
+a {
+  transition: color 0.3s ease;
+}
+
+/* Image loading placeholder */
+img {
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(255, 255, 255, 0.02));
+}
+
+/* Prevent text selection on interactive elements */
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Glass card enhancements */
+.glass-card,
+.glass-card-strong {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover,
+.glass-card-strong:hover {
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.45), 0 0 40px rgba(168, 85, 247, 0.1);
+}
+
+/* Responsive typography adjustments */
+@media (max-width: 640px) {
+  .heading-xl {
+    font-size: clamp(2rem, 8vw, 2.75rem);
+  }
+  
+  .heading-lg {
+    font-size: clamp(1.75rem, 6vw, 2rem);
+  }
+  
+  .heading-md {
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Print styles */
+@media print {
+  .noise-overlay,
+  nav,
+  .glass-card::before {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
