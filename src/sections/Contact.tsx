@@ -95,7 +95,7 @@ const Contact = () => {
           {/* Contact Methods */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
             <a
-              href="mailto:hello@designorbit.studio"
+              href="mailto:mdnishar373@gmail.com"
               className="flex items-center gap-3 p-4 bg-white/[0.04] rounded-xl hover:bg-white/[0.08] transition-colors group"
             >
               <div className="w-10 h-10 rounded-lg bg-violet-accent/20 flex items-center justify-center">
@@ -104,13 +104,13 @@ const Contact = () => {
               <div>
                 <p className="text-xs text-muted-foreground mb-0.5">Email</p>
                 <p className="text-sm text-white group-hover:text-violet-accent transition-colors">
-                  hello@designorbit.studio
+                  mdnishar373@gmail.com
                 </p>
               </div>
             </a>
 
             <a
-              href="tel:+15550132480"
+              href="tel:+918800610890"
               className="flex items-center gap-3 p-4 bg-white/[0.04] rounded-xl hover:bg-white/[0.08] transition-colors group"
             >
               <div className="w-10 h-10 rounded-lg bg-violet-accent/20 flex items-center justify-center">
@@ -119,13 +119,13 @@ const Contact = () => {
               <div>
                 <p className="text-xs text-muted-foreground mb-0.5">Call</p>
                 <p className="text-sm text-white group-hover:text-violet-accent transition-colors">
-                  +1 (555) 013-2480
+                  +91 8800610890
                 </p>
               </div>
             </a>
 
             <a
-              href="https://wa.me/15550132480"
+              href="https://wa.me/918800610890"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 p-4 bg-white/[0.04] rounded-xl hover:bg-white/[0.08] transition-colors group"
