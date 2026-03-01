@@ -1,8 +1,10 @@
 
+import PremiumBackground from "./components/PremiumBackground";
 
 const Connect = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 text-center">
+    <div className="relative min-h-screen bg-black text-white flex flex-col items-center justify-center px-6 text-center">
+  <PremiumBackground />
 
       <h1 className="text-4xl font-bold mb-2">
         Nishar & Naushad
